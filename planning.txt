@@ -1,0 +1,42 @@
+Voting Application
+A functionallity where pulblic can vote given sets of candinates
+
+Models?
+Routes?
+
+#functionallity
+
+1.User can signin/register themself
+2.User can se candinates list
+3.Vote one of the candinate, after voting cant change
+4.Route which shoes list of candinates and their live vote counts ,Voting Leadboard
+5.User data must user Unique Identification no 
+6.Admin who can maintain candinate lsit but cant maniupulate votes
+7.User can change their password
+8.Login their aadhar card and password
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#Routes
+
+User Authentication:
+1. POST /register - register a new user
+2. POST /login - login an existing user  {Aadhar card and password}
+
+Voting:
+1. GET /candidates - get list of candidates
+2. POST /vote/:candinateid - vote for specific candinate
+
+Vote count:
+1. GET /votecounts - Get the lsit of candinates shoted by their voting counts
+
+User Profile:
+1. GET /profile - get user profile information
+2. PUT /profile/password - update user password
+
+Admin Dashboard
+1. POST /candidates - Add a new candinate
+2. PUT /candidates/:candinateid - update existing candidates
+3. DELETE /candidates/:candinateid - Delete a candinate from list
+
+----------------------------------------------------------------------------------------------------------------------------------------------
